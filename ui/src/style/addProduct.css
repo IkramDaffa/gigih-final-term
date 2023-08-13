@@ -1,0 +1,10 @@
+.form-add-product {
+  width: 50%;
+}
+.container-form-add-product {
+  display: flex;
+  justify-content: center;
+}
+.add-product-form-title {
+  text-align: center;
+}
