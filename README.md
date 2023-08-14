@@ -494,7 +494,7 @@ npm run dev
 
 ```
 
-docker build -t tokoplay
+docker build -t tokoplay .
 docker run -d -p 80:80 tokoplay-app tokoplay
 docker tag tokoplay ikramdaffa/tokoplay:1.0
 docker push ikramdaffa/tokoplay:1.0
