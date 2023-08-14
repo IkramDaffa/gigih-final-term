@@ -6,6 +6,7 @@ import {
   CardImg,
   CardImgOverlay,
   CardTitle,
+  Button,
 } from "reactstrap";
 import { connect } from "react-redux";
 import { Fragment, useEffect } from "react";
@@ -22,7 +23,7 @@ function Home(props) {
   };
   useEffect(() => {
     props.getDataVideos();
-  }, []);
+  }, [props.getDataVideos.video]);
   return (
     <Layout>
       <Container className="d-flex gap-2 flex-wrap">
@@ -50,6 +51,13 @@ function Home(props) {
               </Fragment>
             );
           })}
+        <Button
+          style={{ width: 300, height: 400 }}
+          className="btn"
+          onClick={() => navigate("/addVideo")}
+        >
+          Add Video +
+        </Button>
       </Container>
     </Layout>
   );

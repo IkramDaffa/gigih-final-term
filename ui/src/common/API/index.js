@@ -11,10 +11,7 @@ export const API = {
   },
   post: async function (endpoint, params) {
     try {
-      const response = await axios.post(
-        "http://localhost:3080/" + endpoint,
-        params
-      );
+      const response = await axios.post(endpoint, params);
       return response;
     } catch (error) {
       throw error.response;

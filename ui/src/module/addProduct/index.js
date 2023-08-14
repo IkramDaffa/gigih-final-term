@@ -92,7 +92,7 @@ function AddProduct(props) {
               <Input
                 id="price"
                 name="price"
-                placeholder="insert price"
+                placeholder="insert price (ex: 150000)"
                 type="number"
                 required
                 value={price}

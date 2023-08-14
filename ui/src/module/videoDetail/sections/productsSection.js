@@ -27,12 +27,7 @@ function ProductsSection(props) {
         props.getVideoDetail.products.map((product, index) => {
           return (
             <Fragment key={index}>
-              <Card
-                style={{
-                  width: "18rem",
-                  background: "grey",
-                }}
-              >
+              <Card className="card-product">
                 <CardBody>
                   <CardTitle tag="h5">{product.title}</CardTitle>
                   <CardSubtitle className="mb-2 text-muted" tag="h6">
